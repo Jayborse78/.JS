@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE>Confirmation Dialog Box</TITLE>
+  <script>
+      function rate()
+	  {
+	    var get=confirm("Do you Want to continue");
+		if(get==true)
+		{
+		  document.write("User Can Continue");
+		  return true;
+		 }
+		 else
+		 {
+		  document.write("User Can't continue");
+		  return false;
+		 }
+	  }
+  </script>
+  </HEAD>
+  <BODY>
+  <p>Click On The Button And See the result</p>
+  <form>
+  <input type="button" value="click" onclick="rate()">
+  </form>
+ </BODY>
+</HTML>
