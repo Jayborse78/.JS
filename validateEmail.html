@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function check_email()
+{
+var email_add=document.getElementById("email").value
+atpos=email_add.indexOf("@")
+dotpos=email_add.lastIndexOf(".")
+if (atpos<1 || dotpos<atpos+2 )
+{
+alert("Not Valid Email, please try again.");
+return false
+}
+else
+{
+alert("Email Is Valid")
+return true
+}
+}
+
+</script>
+</head>
+<body>
+Enter Email<input type="text" id="email">
+<input type="button" Value="Check Email" onclick="return check_email()">
+</body>
+</html>
